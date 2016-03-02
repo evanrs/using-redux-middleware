@@ -1,0 +1,21 @@
+@import "normalize.css";
+@import "./theme.less";
+
+:global {
+  :root, html, body {
+    .root-container();
+    background-color: white;
+  }
+
+  :root, html, body, * {
+    box-sizing: border-box;
+  }
+
+  #mount {
+    .root-container();
+  }
+
+  input[type="button"], input[type="submit"], button {
+    .button-flat();
+  }
+}

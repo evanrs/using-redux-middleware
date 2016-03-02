@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "id.schema"
+    },
+    "type": {
+      "enum": ["post"]
+    },
+    "title": {
+      "type": "string",
+      "faker": "lorem.words"
+    },
+    "subtitle": {
+      "type": "string",
+      "faker": "lorem.sentence"
+    },
+    "intro": {
+      "type": "string",
+      "faker": "lorem.sentences"
+    },
+    "body": {
+      "type": "string",
+      "faker": "lorem.paragraph"
+    },
+    "likes": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "userRef.schema"
+      },
+      "uniqueItems": true
+    },
+    "createdAt": {
+      "type": "string",
+      "faker": "date.recent"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "subtitle",
+    "intro",
+    "body",
+    "likes",
+    "createdAt"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "lat": {
+      "type": "string",
+      "faker": "address.latitude"
+    },
+    "lng": {
+      "type": "string",
+      "faker": "address.longitude"
+    }
+  },
+  "required": ["lat", "lng"]
+}

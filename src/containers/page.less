@@ -1,0 +1,36 @@
+@import "../theme.less";
+
+.container {
+  max-width: 60 * @baseline;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: @baseline;
+  margin-bottom: @baseline;
+  padding: @baseline 3 * @baseline;
+
+  h5 {
+    color: fade(@gray, 75);
+    margin-top: -@baseline;
+  }
+
+  p {
+    font-size: 1.25 * @baseline;
+    line-height: 2 * @baseline;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    > * {
+      margin-right: @baseline;
+    }
+  }
+}
+
+.col {
+  display: inline-block;
+  min-width: 28 * @baseline;
+  margin: @baseline;
+}

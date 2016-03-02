@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "streetA": {
+      "type": "string",
+      "faker": "address.streetName"
+    },
+    "streetB": {
+      "type": "string",
+      "faker": "address.streetAddress"
+    },
+    "streetC": {
+      "type": "string",
+      "faker": {
+        "address.streetAddress": [true]
+      }
+    },
+    "streetD": {
+      "type": "string",
+      "faker": "address.secondaryAddress"
+    },
+    "city": {
+      "type": "string",
+      "faker": "address.city"
+    },
+    "state": {
+      "type": "string",
+      "faker": "address.state"
+    },
+    "country": {
+      "type": "string",
+      "faker": "address.country"
+    },
+    "zipcode": {
+      "type": "string",
+      "faker": "address.zipCode"
+    },
+    "geo": {
+      "$ref": "coordinates.schema"
+    }
+  },
+  "required": [
+    "streetA",
+    "streetB",
+    "streetC",
+    "faker",
+    "streetD",
+    "city",
+    "state",
+    "country",
+    "zipcode",
+    "geo"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "id.schema" },
+    "type": {
+      "enum": ["user"]
+    }
+  },
+  "required": ["id", "type"]
+}

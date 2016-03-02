@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "faker": "company.companyName"
+    },
+    "catchPhrase": {
+      "type": "string",
+      "faker": "company.catchPhrase"
+    },
+    "bs": {
+      "type": "string",
+      "faker": "company.bs"
+    }
+  },
+  "required": [
+    "name",
+    "catchPhrase",
+    "bs"
+  ]
+}

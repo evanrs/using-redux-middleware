@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "minItems": 99,
+  "items": {
+    "$ref": "user.schema"
+  },
+  "uniqueItems": true
+}

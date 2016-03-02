@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "minItems": 20,
+  "items": {
+    "$ref": "post.schema"
+  },
+  "uniqueItems": true
+}

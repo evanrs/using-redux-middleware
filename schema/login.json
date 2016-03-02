@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "faker": "random.uuid"
+    },
+    "account": {
+      "$ref": "user.schema"
+    }
+  },
+  "required": ["token", "account"]
+}

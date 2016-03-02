@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "avatar": {
+      "$ref": "avatar.schema"
+    },
+    "name": {
+      "type": "string",
+      "faker": "name.findName"
+    },
+    "username": {
+      "type": "string",
+      "faker": "internet.userName"
+    },
+    "email": {
+      "type": "string",
+      "faker": "internet.email"
+    },
+    "jobTitle": {
+      "type": "string",
+      "faker": "name.jobTitle"
+    },
+    "address": {
+      "$ref": "address.schema"
+    },
+    "phone": {
+      "type": "string",
+      "faker": "phone.phoneNumber"
+    },
+    "website": {
+      "type": "string",
+      "faker": "internet.domainName"
+    },
+    "company": {
+      "$ref": "company.schema"
+    }
+  },
+  "required": [
+    "avatar",
+    "name",
+    "username",
+    "email",
+    "jobTitle",
+    "address",
+    "phone",
+    "website",
+    "company",
+    "posts"
+  ]
+}

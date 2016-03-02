@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "id.schema" },
+    "type": {
+      "enum": ["user"]
+    },
+    "email": { "$ref": "email.schema" },
+    "profile": {
+      "$ref": "profile.schema"
+    },
+    "color": {
+      "type": "string",
+      "faker": "internet.color"
+    },
+    "posts": {
+      "$ref": "posts.json"
+    }
+  },
+  "required": ["id", "type", "profile", "email", "name", "avatar", "color", "posts"]
+}
